@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Patient Portal</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="./src/bk.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: powderblue;
+            background-image: url("./src/doc3.jpg");
+            color: black;
+        }
+        p {
+            color: green;
+        }
+        .nav a {
+            font-size: 1.2em;
+        }
+        h2,        h4 {
+            color: navy;
+        }
+        label {
+            display: inline-block;
+            width: 10em;
+            text-align: right;
+        }
+        body {
+            position: relative;
+          }
+		  #section1, #section2, #section3, #section4 {
+		  opacity:0.9;
+		  }
+          ul.nav-pills {
+            top: 40px;
+            position: fixed;
+          }
+          div.col-8 div {
+              padding: 1em;
+              border-radius: 1em;
+          }
+        
+         .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+    padding-top: 70px;
+  }
+        #topbanner{background-image: url("./src/banner.png");  border-style: solid;}  
+        
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+    <div id="topbanner" class="container-fluid" style="color:#fff;height:200px; position:relative">
+  
+        <h4 style="position:absolute;bottom: 0;right: 260px;">Logged in as Mike Singh.</h4>
+        
+</div>
+    <div class="row"><div class="col-sm-2 col-4"></div>
+        <div class="col-sm-10 col-8">
+            
+        
+            
+    <ul class="breadcrumb" style="margin-bottom: 5; left:30px"  data-spy="affix" data-offset-top="200">
+        <li><a href="./index.html">Login Page</a></li>
+        <li>User Page</li>
+    </ul>
+       <div class="alert alert-warning alert-dismissible fade show in" role="alert">
+         <i>Succesfully Logged in as: </i> <b>Mike Singh.</b>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">Dismiss &times;</span>
+        </button>
+    </div>     
+            
+        </div></div>
+   
+    <div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-2 col-4" id="myScrollspy">
+      <ul class="nav nav-pills flex-column">
+          <br>
+        <li class="nav-item">
+          <a class="nav-link active" href="#section1">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section4">Appoinment<span class="badge">2</span></a>
+        </li>
+        <li class="nav-item btn btn-danger">
+          <a class="nav-link" href="./index.html">Log Out</a>
+        </li>
+          
+        
+      </ul>
+    </nav>
+      
+    <div class="col-sm-10 col-8">
+      <div id="section1" class="bg-success" >    
+        
+          <h2>Mike Singh</h2>
+
+            <table class="table table-dark table-hover table-striped" style="opacity:0.9;">
+                <tbody>
+                    <tr>
+                        <td>First Name: </td>
+                        <td>Mike</td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td>Singh</td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>Male</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Blood Group:</td>
+                        <td>A+</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Birthday:</td>
+                        <td>1995-05-28</td>
+                    </tr>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Ongoing conditions:</td>
+                        <td>Diabetes, Short-Sighted, High-Cholestorol</td>
+                    </tr>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Image:</td>
+                        <td><img src="./src/c_img_14.jpg" alt="image not found"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+          
+      </div>
+      <div id="section2" class="bg-warning"> 
+        
+          <h2>Contact Details: Mike Singh</h2>
+            <form>
+                <table class="table table-hover table-striped ">
+                    <tbody>
+                        <tr>
+                            <td><label for="fname">Mobile No:</label></td>
+                            <td><input type="text" id="fname" name="fname" value="784567895"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="fname">Business No:</label></td>
+                            <td><input type="text" id="fname" name="fname" value="948875895"></td>
+
+                        <tr>
+                            <td><label for="fname">Email:</label></td>
+                            <td><input type="text" id="fname" name="fname" value="mike@abc.com"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="fname">Home Address:</label></td>
+                            <td><textarea rows="4" cols="40" placeholder="Address">No-12, Phagwara Road, Jalandhar</textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="fname">Emergency Contact:</label></td>
+                            <td><input type="text" id="fname" name="fname" value="784567895"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="fname">Emergency No:</label></td>
+                            <td><input type="text" id="fname" name="fname" value="766667895"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" id="fname" name="f_submit" value="Update Changes"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </form>
+          
+      </div>        
+      <div id="section3" class="bg-secondary">         
+        
+          <h2>Mike Singh's Medical History</h2>
+
+            <table class="table bg-success table-dark table-hover table-striped" style="opacity:0.8;">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Visit Date</th>
+                        <th scope="col">Channeled Doctor</th>
+                        <th scope="col">Tests Done</th>
+                        <th scope="col">Remarks by Doctor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>2020-02-06</td>
+                        <td>Dr. Ajey</td>
+                        <td>X-Ray, Blood test</td>
+                        <td>Patient feels tired constatly, prescribed vitamin B+ & C</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>2020-06-03</td>
+                        <td>Dr. Nitesh</td>
+                        <td>Blood test</td>
+                        <td>Patiet is in good health. White blood cell count is at avarage.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>2020-08-06</td>
+                        <td>Dr. Sathish</td>
+                        <td>Blood peassure</td>
+                        <td>Patient need further bed rest.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>2020-08-08</td>
+                        <td>Dr. Sathish</td>
+                        <td>No issues</td>
+                        <td>No remarks.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>2020-08-29</td>
+                        <td>Dr. Sathish</td>
+                        <td>High sugar</td>
+                        <td>Control diet.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>2020-09-06</td>
+                        <td>Dr. Sathish</td>
+                        <td>Blood peassure</td>
+                        <td>Patient is in need of bed rest for a fortnight.</td>
+                    </tr>
+
+                </tbody>
+            </table>
+          
+      </div>
+      <div id="section4" class="bg-danger">         
+        
+          <div class="row container-fluid ">
+
+                <div style=" border-radius: 1em; padding: 2em;  margin: 0 auto;" class="bg-info">
+                    <h2>Appoinment Booking</h2>
+
+                    <form>
+                        <label for="area">Practice Area:</label>
+
+                        <select name="area" id="area">
+                            <option value="v1">Pediatrician</option>
+                            <option value="v2">Gynecologist </option>
+                            <option value="v3">Surgeon</option>
+                            <option value="v4">Psychiatrist</option>
+                        </select><br>
+
+                        <label for="doc">Doctors Avilable:</label>
+
+                        <select name="doc" id="area">
+                            <option value="v1">Dr. Cee Keeth</option>
+                            <option value="v2">Dr. Kumari Cia </option>
+                            <option value="v3">Dr Jane Doe</option>
+                            <option value="v4">Dr. Manel Yo</option>
+                        </select><br>
+
+                        <label for="datee">Booking Date:</label>
+                        <input type="date"><br><br>
+                        <label for="subm"></label>
+                        <button type="button" class="btn btn-success" onclick="window.location.href='./submitted.html'">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+          
+      </div>      
+      
+    </div>
+  </div>
+
+    </div>
+</body></html>

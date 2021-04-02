@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Heart Hospital</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="./src/bk.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: powderblue;
+            background-image: url("./src/doc.jpg");
+            color: black;
+        }
+       
+
+        a {
+            font-size: 1.2em;
+        }
+
+        h2,
+        h4 {
+            color: white;
+        }
+
+        .label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            font-size: 1em;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-light" style="display:block;">
+        <img src="./src/logo.png" height="50px" style="float:left; margin-left: 5em; margin-top:.5em;" />
+
+        <ul class="navbar-nav" style="float:right; margin-right: 5em;">
+            <li class="nav-item">
+                <a class="nav-link" href=#><span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></span> HOME</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href=# data-toggle="dropdown"> <span class="glyphicon 
+glyphicon glyphicon glyphicon-align-justify" aria-hidden="true"> </span> BLOG </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Success Stories</a>
+                    <a class="dropdown-item" href="#">Upcoming Events</a>
+                    <a class="dropdown-item" href="#">Parent Company Blog</a>
+                </div>
+            </li>
+            <div class="btn-group" role="group" >
+            <button class="btn btn-warning btn-lg" type="button" data-toggle="collapse" data-target="#aboutus" aria-expanded="false" aria-controls="collapseExample">
+            About Us
+            </button>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#getintouch"><span class="glyphicon glyphicon glyphicon-phone-alt" aria-hidden="true">&nbsp</span>GET IN TOUCH</button>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="popover" data-trigger="focus" title="Email Nortification" data-placement="bottom" data-content="You have 3 unread emails awaiting."><span class="glyphicon glyphicon glyphicon-send" aria-hidden="true">&nbsp</span>Email <span class="badge badge-pill badge-dark">3</span></button>
+            </div>
+        </ul>
+
+    </nav>
+
+    <h1><center>"Heart<sup>+</sup> Hospital" Management System</center>    </h1>
+    
+        <div class="collapse" id="aboutus">
+        <div class="row"><div class="container">
+            <div class="col-sm-6">
+        <div class="card card-body">
+        <h3>About Heart<sup>+</sup> Hospital</h3>    
+        <p>For over three decades, we have specialised in specific areas of medicine - mental health, orthopaedics, neurology, surgery and general medicine. This approach has given us an in-depth understanding of specific disorders and their treatments, enabling us to focus on providing the best treatment options and care for our patients. Each year, our 10,600 employees treat and care for around 300,000 patients at currently 26 locations in Germany and the United Kingdom.</p><p>
+
+Our aim is to give every patient the prospect of a better quality of life. To do so, our reinvestment model ensures we maintain a high standard of quality and are able to be innovative and forward thinking with our infrastructure, clinical delivery and staff development. Additionally, our collaboration with experienced specialists, expert healthcare professionals, clinical partners and patient groups ensures we provide the best-possible experience and care for patients and their families when visiting our hospitals.</p>    
+            
+            </div>
+        </div>
+            
+            <div class="col-sm-6">
+        <div class="card card-body">
+        <img class="img-thumbnail rounded" src="./src/staff.jpg" style="width: 100%;
+  height: auto;">   
+            
+            </div>
+        </div>
+            </div>
+            </div>    
+    </div>
+    <br><br><br>
+    <center>
+        <p>Please Login to Continue</p>
+    </center><br>
+    <!--col-sm-6 col-md-3 -->
+
+
+
+    <div class="row container-fluid">
+        <div class="col">
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center" style=" border-radius: 1em; padding: 2em; background-color:rgb(87, 206, 235, 0.6);">
+            <form method="GET">
+                <center>
+                    <label class="label label-info label">User ID: </label> <input type="text" name="i_uid" size="20" data-toggle="popover" data-trigger="hover" title="Enter unique ID" data-content="expecting 8 characters"><br />
+                    <label class="label label-info">Password: </label> <input type="password" name="i_pass" size="20" data-toggle="tooltip" data-placement="right" title="Maximum 3 attempts allowed"> <br /><br />
+
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-success" onclick="window.location.href='./patient.html'">Patient Login</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='./admin.html'">Admin Login</button>
+                    </div>
+                </center>
+            </form>
+        </div>
+
+        <div class="col">
+        </div>
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="getintouch" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLongTitle">Get in touch with us!</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+        <div class="col-md-12 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+      
+
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <br><br><br>
+    <div class="alert alert-danger alert-dismissible fade show in" role="alert">
+        <i>Please Note: </i>This website uses <b>cookies.</b>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">Dismiss &times;</span>
+        </button>
+    </div>
+    
+    <p style="float:right">Program by: Banuka Vidusanka..... </p>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+    <!--tooltip-->
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body></html>

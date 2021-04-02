@@ -1,0 +1,1 @@
+console.log("Static File indext.html file is Loading");

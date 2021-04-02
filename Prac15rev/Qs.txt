@@ -1,0 +1,9 @@
+Question 1-
+
+Write codes for adding a note in NodeJS. Share the output screen and the code written on LPU Live.
+
+
+Remove a note.
+
+
+Listing notes that you've already created

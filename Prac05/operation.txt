@@ -1,0 +1,15 @@
+
+The numbers are: 8 & 7
+Division is: 1.1428571428571428
+The numbers are: 8 & 7
+Multiplication is: 56
+The numbers are: 8 & 1.6
+Multiplication is: 12.8
+The numbers are: 8 & 1.6
+Sum is: 9.6
+The numbers are: 8 & 1.3
+Sum is: 9.3
+The numbers are: 8 & 1.3
+Division is: 6.153846153846153
+The numbers are: 8 & 1
+Division is: 8
